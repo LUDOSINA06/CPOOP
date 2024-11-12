@@ -1,0 +1,158 @@
+/* Réinitialisation des marges et des espacements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #b3b3f1;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .Logo {
+    color: #240be0;
+    font-size: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header .change {
+    color:black;
+}
+
+header .Logo:hover {
+    color: #f50606;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+/* Styles des articles */
+.article {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.article img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.article p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+}
+
+.article .prix {
+    font-size: 1.6em;
+    color: #28a745;
+    margin: 5px 0;
+}
+
+/* Icône cœur */
+.liked {
+    font-size: 1.5em;
+    color: #e94560;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin: 10px 0;
+}
+
+.liked:hover {
+    color: #f25f7a;
+}
+
+/* Boutons */
+button {
+    font-size: 0.9em;
+    margin: 5px 3px;
+    padding: 8px 15px;
+}
+
+.btn-outline-success {
+    border-color: #f6060e;
+    color: #ee0a0a;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-outline-warning {
+    border-color: #ff0707;
+    color: #ffc107;
+}
+
+.btn-outline-warning:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.btn-outline-danger {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Champ quantité */
+.quantite {
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Total prix par article */
+h6 {
+    font-size: 1em;
+    color: #fefcfc;
+    margin-top: 15px;
+}
+
+/* Prix total */
+.Prixtotal {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #eef8f1;
+    border: none;
+    text-align: center;
+    width: 100px;
+    background-color: transparent;
+    margin-top: 10px;
+}
